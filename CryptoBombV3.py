@@ -3,8 +3,13 @@ import time
 import random
 from datetime import datetime
 
+# Dicas pessoais:
 # Rodei o Pyinstaller no CMD do Windows
+
+# Infos para que outros PCs rodem sem problemas:
+# Tela deve ser fullhd, com o zoom em 100%
 # Coloquei atalhos de tecla nas metamasks dos navegadores, ALT+P. Para tratar um possível erro ao assinar.
+# Reload da página é feito com o F5, portanto, nada pode estar bindado em paralelo com está tecla.
 
 # pip install opencv-python
 
