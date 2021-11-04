@@ -214,7 +214,7 @@ def treasure_hunter():
     if temporizador == 20:
         print('Temporizador: ', temporizador)
         print(date_time(), '#6 - TREASURE HUNTER - FAIL')
-        full_entrance()
+        error()
 
 
 
@@ -229,7 +229,7 @@ def new_map():
             pyautogui.click(SETE_new_map)
             temporizador = 500
             SETE_new_map = None
-            print(date_time(), '#7 - NEW MAP - FAIL')
+            print(date_time(), '#7 - NEW MAP - COMPLETE')
 
         else:
             temporizador += 2
@@ -258,6 +258,26 @@ def full_entrance():
 
     print(date_time(), '############## FULL ENTRANCE COMPLETE #############')
 
+
+def last_validation():
+
+    temporizador = 0
+
+    while temporizador < 20:
+        NOVE_validation = pyautogui.locateOnScreen('9_validation.png', confidence=0.9)
+
+        if NOVE_validation is not None:
+            pyautogui.click(NOVE_validation)
+            temporizador = 500
+            NOVE_validation = None
+            print(date_time(), '#9 - LAST VALIDATION - COMPLETE')
+
+        else:
+            temporizador += 2
+            time.sleep(2)
+    if temporizador == 20:
+        error()
+
     # ALT TAB
 def alt_tab():
     print(date_time(), '############## ALT TAB #############')
@@ -285,6 +305,7 @@ while ativador:
     maps = 1
     errors = 0
     timer = 0
+    last_validation_bool = 0
 
     for k in range(tab):
         temporizador = 0
@@ -326,12 +347,26 @@ while ativador:
             execution_time = round((time.time() - start_time), 2)
             timer += execution_time
 
+        # Aos 15 minutos irá sair e entrar na partida para desbugar os herois.
+        elif 900 <= timer <= 960 and last_validation_bool == 0:
+            for k in range(tab):
+                temporizador = 0
+
+                last_validation()
+                alt_tab()
+
+            last_validation_bool = 1
+
+            execution_time = round((time.time() - start_time), 2)
+            timer += execution_time
+
         else:
             time.sleep(5)
             alt_tab()
 
             execution_time = round((time.time() - start_time), 2)
             timer += execution_time
+
 
     print(date_time(), '| PAUSA DE DESCANSO - INICIADA')
     start_time = time.time()
