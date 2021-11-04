@@ -353,6 +353,7 @@ while ativador:
                 temporizador = 0
 
                 last_validation()
+                treasure_hunter()
                 alt_tab()
 
             last_validation_bool = 1
@@ -380,5 +381,3 @@ while ativador:
 
     # ________________________--------------______________________
     # A fazer:
-    # Achar alguma maneira de não ficar preso caso o loop de carregamento incial apareça;
-    # Verificar se o erro do CACHE lotado foi arrumado. Caso não, achar uma solução.
