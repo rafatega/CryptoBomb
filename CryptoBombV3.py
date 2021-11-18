@@ -12,18 +12,17 @@ from datetime import datetime
 # Reload da página é feito com o F5, portanto, nada pode estar bindado em paralelo com está tecla.
 
 # pip install opencv-python
+# pip install Pillow
+# pip install pyautogui
+# pip install Flask
+# pip install Flask-MySQLdb
 
 numRandom_longo = random.random() * 120
 numRandom_curto = random.random() * 3
 
-move_before_scroll_x = 784
-move_before_scroll_y = 512
+move_before_scroll_x = 800
+move_before_scroll_y = 618
 
-move_after_scroll_x = 815
-move_after_scroll_y = 120
-
-work_x = 890
-work_y = 750
 
 # Tempo para que o script comece a atuar
 time.sleep(5)
@@ -154,21 +153,34 @@ def lets_work():
         full_entrance()
 
     # Scroll na página dos HEROES
-    for j in range(2):
-        scroll = True
-        while scroll:
-            time.sleep(1)
-            pyautogui.moveTo(move_before_scroll_x, move_before_scroll_y)
+
+    temporizador = 0
+
+    while temporizador < 20:
+        DOZE_character_scroll_down = pyautogui.locateOnScreen('12_charapter_scroll_down.png', confidence=0.9)
+
+        if DOZE_character_scroll_down is not None:
+            pyautogui.moveTo(DOZE_character_scroll_down.left, DOZE_character_scroll_down.top+150)
             time.sleep(0.2)
-            pyautogui.mouseDown(button='left')
-            pyautogui.moveTo(move_after_scroll_x, move_after_scroll_y, duration=0.2)
-            pyautogui.click()
-            time.sleep(0.3)
-            scroll = False
+            DOZE_character_scroll_down = None
+            for s in range(58):
+                pyautogui.scroll(-99)
+
+            temporizador = 500
+
+            print(date_time(), '#12 - SCROLL - COMPLETE')
+
+        else:
+            temporizador += 2
+            time.sleep(2)
+
+    if temporizador == 20:
+        print('Temporizador: ', temporizador)
+        print(date_time(), '#12 - SCROLL - FAIL')
+        full_entrance()
 
     # Clica em todos os HEROES
     temporizador = 0
-    workers_resting = 1
 
     while temporizador < 20:
         DEZ_work_heroes = pyautogui.locateOnScreen('10_backlog_work.png', confidence=0.99)
@@ -180,13 +192,13 @@ def lets_work():
                 time.sleep(0.2)
                 pyautogui.click(DEZ_work_heroes)
                 DEZ_work_heroes = None
-                time.sleep(1.2)
                 DEZ_work_heroes = pyautogui.locateOnScreen('10_backlog_work.png', confidence=0.99)
 
             temporizador = 500
 
         elif ONZE_work_heroes_complete is not None:
             temporizador = 500
+            ONZE_work_heroes_complete = None
 
         else:
             temporizador += 2
@@ -196,11 +208,6 @@ def lets_work():
         print(date_time(), 'WORK - FAIL')
         full_entrance()
 
-
-
-    '''for i in range(wallet_list[k].heroes):
-        pyautogui.click(work_x, work_y)
-        time.sleep(1.2)'''
 
     # Clica em fechar aba HEROES
     temporizador = 0
