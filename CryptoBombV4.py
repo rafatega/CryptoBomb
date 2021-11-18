@@ -467,6 +467,9 @@ while ativador:
 
     else:
         print('Algo deu errado. (Login)')
+        time.sleep(3)
+        exit()
+
 
     # Após completado 1h20m de pausa, o SCRIPT reinicia.
 
