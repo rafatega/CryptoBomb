@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d83328e-f2dc-4f8e-8297-259c69f909a7" name="Default Changelist" comment="Adicionado LAST_VALIDATION" />
+    <list default="true" id="3d83328e-f2dc-4f8e-8297-259c69f909a7" name="Default Changelist" comment="Adicionado LAST_VALIDATION">
+      <change afterPath="$PROJECT_DIR$/13_overload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_overload_close.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/10_backlog_work.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/11_backlog_work_complete.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/12_charapter_scroll_down.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/1_connect_wallet.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/2_meta_mask.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/3_assinar.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/4_heroes.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/5_close_heroes.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/6_treasure_hunter.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/7_new_map.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/8_error.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/9_validation.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV3/CryptoBombV3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV3b.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV5-TXT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV5b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptoBombV3.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoBombV3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptoBombV4.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoBombV4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testes.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +62,7 @@
       <recent name="C:\Users\Tega\Documents\Projetos\CodigosIndependentes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CryptoBombV4">
+  <component name="RunManager" selected="Python.CryptoBombV5">
     <configuration name="CryptoBombV3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -51,27 +76,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CryptoBombV3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="CryptoBombV3a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Tega\Envs\CodigosIndependentes\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CryptoBombV2" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CryptoBombV2/CryptoBombV3a.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="request_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="CryptoBombV5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -113,7 +117,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/request_api.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CryptoBombV5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CryptoBombV5b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Tega\Envs\CodigosIndependentes\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CryptoBombV5b.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.CryptoBombV4" />
-        <item itemvalue="Python.request_api" />
+        <item itemvalue="Python.CryptoBombV5" />
+        <item itemvalue="Python.CryptoBombV5b" />
         <item itemvalue="Python.testes (1)" />
         <item itemvalue="Python.CryptoBombV3" />
-        <item itemvalue="Python.CryptoBombV3a" />
+        <item itemvalue="Python.CryptoBombV4" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637279305517</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Atualizações">
+      <created>1637279407005</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637279407005</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Atualizações">
+      <created>1637279550123</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637279550123</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

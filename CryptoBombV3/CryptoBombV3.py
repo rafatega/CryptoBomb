@@ -1,12 +1,7 @@
 import pyautogui
 import time
 import random
-import json
 from datetime import datetime
-from getmac import get_mac_address as gma
-import requests
-import cv2
-
 
 # Dicas pessoais:
 # Rodei o Pyinstaller no CMD do Windows
@@ -15,18 +10,22 @@ import cv2
 # Tela deve ser fullhd, com o zoom em 100%
 # Coloquei atalhos de tecla nas metamasks dos navegadores, ALT+P. Para tratar um possível erro ao assinar.
 # Reload da página é feito com o F5, portanto, nada pode estar bindado em paralelo com está tecla.
-# "cmd.exe" /k ""C:\Users\Tega\Envs\CodigosIndependentes\Scripts\activate.bat""  para entrar na VENV
-# pyinstaller --hidden-import getmac --hidden-import opencv-python --hidden-import opencv-python-headless --hidden-import cv2 --onefile CryptoBombV4.py
+
 # pip install opencv-python
 # pip install Pillow
 # pip install pyautogui
-# pip install getmac
-# pip install opencv-python-headless
-
+# pip install Flask
+# pip install Flask-MySQLdb
 
 numRandom_longo = random.random() * 120
 numRandom_curto = random.random() * 3
 
+move_before_scroll_x = 800
+move_before_scroll_y = 618
+
+
+# Tempo para que o script comece a atuar
+time.sleep(5)
 
 # Validação para que o script fiquei em loop infinito
 validacao = True
@@ -38,71 +37,21 @@ class Wallet:
 
 # Inserção de dados da carteira
 Wallet_0 = Wallet(15)
-
+Wallet_1 = Wallet(15)
+Wallet_2 = Wallet(15)
 
 # Lista com as carteiras
-wallet_list = [Wallet_0]
+wallet_list = [Wallet_0, Wallet_1, Wallet_2]
 
 # Total de abas
 tab = len(wallet_list)
-
-
-def auth():
-    # URL da API
-    url = 'https://rafatega.github.io/cbjsonapi/publicapicb.json'
-
-    # Pegando as infos da URL
-    response = requests.get(url)
-
-    # Resposta em tipo JSON (confuso de ler)
-    packages_json = response.json()
-
-    # Deixando legível.
-    packages_str = json.dumps(packages_json, indent=2)
-
-    # Carregando dados do JSON
-    loads_json = json.loads(packages_str)
-
-    authentication = False
-
-    while authentication is False:
-
-        username = input('Username: ')
-        password = input('Password: ')
-
-        try:
-            if loads_json[username]:
-                api_password = loads_json[username]['password']
-                api_mac = loads_json[username]['mac']
-                mac_address = gma()
-
-                # Única maneira de autenticação
-                if password == api_password and mac_address == api_mac:
-                    authentication = True
-                    print('Bem-vindo :D')
-
-                    return authentication
-
-                elif password == api_password and mac_address != api_mac:
-                    print('Este computador não tem permissão para executar o BOT.')
-                else:
-                    print('Credenciais erradas, tente novamente.')
-
-        except:
-            print('Credenciais erradas, tente novamente.')
 
 
 def reconnect():
     # LOG
     print(date_time(), '| RECCONECT()')
 
-    pyautogui.keyDown('ctrl')
-    time.sleep(0.2)
     pyautogui.press('f5')
-    time.sleep(0.2)
-    pyautogui.keyUp('ctrl')
-    time.sleep(0.4)
-
     time.sleep(3.2)
 
     # Clica em Connect Wallet
@@ -369,28 +318,24 @@ def last_validation():
 
     # ALT TAB
 def alt_tab():
-    if tab > 1:
-        print(date_time(), '############## ALT TAB #############')
-        pyautogui.keyDown('alt')
+    print(date_time(), '############## ALT TAB #############')
+    pyautogui.keyDown('alt')
+    time.sleep(0.2)
+    for h in range(tab - 1):
+        pyautogui.press('tab')
         time.sleep(0.2)
-        for h in range(tab - 1):
-            pyautogui.press('tab')
-            time.sleep(0.2)
-        time.sleep(0.2)
-        pyautogui.keyUp('alt')
-        time.sleep(0.4)
-    else:
-        pass
+    time.sleep(0.2)
+    pyautogui.keyUp('alt')
+    time.sleep(0.4)
 
 def date_time():
     now = datetime.now()  # current date and time
 
-    date_time = now.strftime("%d/%m/%Y, %H:%M:%S")
+    date_time = now.strftime("%m/%d/%Y, %H:%M:%S")
     return date_time
 
 
 # MAIN
-
 ativador = True
 
 while ativador:
@@ -400,85 +345,75 @@ while ativador:
     timer = 0
     last_validation_bool = 0
 
-    if auth() is True:
+    for k in range(tab):
+        temporizador = 0
 
-        # Espera para começar
+        full_entrance()
+        alt_tab()
+
+    # 18 Minutos neste loop
+    while timer <= 1080:
+        start_time = time.time()
+
+        print('Tempo pausa (s): ', timer)
         time.sleep(5)
+        SETE_new_map = pyautogui.locateOnScreen('7_new_map.png', confidence=0.9)
+        OITO_error = pyautogui.locateOnScreen('8_error.png', confidence=0.9)
 
-        for k in range(tab):
-            temporizador = 0
+        if SETE_new_map is not None:
 
-            full_entrance()
+            time.sleep(0.2)
+            pyautogui.click(SETE_new_map)
+            time.sleep(2)
+            SETE_new_map = None
+            maps += 1
+            print('*MAPS*: ', maps)
             alt_tab()
 
-        # 18 Minutos neste loop
-        while timer <= 1080:
-            start_time = time.time()
+            execution_time = round((time.time() - start_time), 2)
+            timer += execution_time
 
-            print('Tempo pausa (s): ', timer)
+        elif OITO_error is not None:
+
+            time.sleep(0.2)
+            error()
+            errors += 1
+            OITO_error = None
+            print('*ERROS TRATADOS*: ', errors)
+            alt_tab()
+
+            execution_time = round((time.time() - start_time), 2)
+            timer += execution_time
+
+        # Aos 15 minutos irá sair e entrar na partida para desbugar os herois.
+        elif 900 <= timer <= 960 and last_validation_bool == 0:
+            for k in range(tab):
+                temporizador = 0
+
+                last_validation()
+                treasure_hunter()
+                alt_tab()
+
+            last_validation_bool = 1
+
+            execution_time = round((time.time() - start_time), 2)
+            timer += execution_time
+
+        else:
             time.sleep(5)
-            SETE_new_map = pyautogui.locateOnScreen('7_new_map.png', confidence=0.9)
-            OITO_error = pyautogui.locateOnScreen('8_error.png', confidence=0.9)
+            alt_tab()
 
-            if SETE_new_map is not None:
+            execution_time = round((time.time() - start_time), 2)
+            timer += execution_time
 
-                time.sleep(0.2)
-                pyautogui.click(SETE_new_map)
-                time.sleep(2)
-                SETE_new_map = None
-                maps += 1
-                print('*MAPS*: ', maps)
-                alt_tab()
 
-                execution_time = round((time.time() - start_time), 2)
-                timer += execution_time
-
-            elif OITO_error is not None:
-
-                time.sleep(0.2)
-                error()
-                errors += 1
-                OITO_error = None
-                print('*ERROS TRATADOS*: ', errors)
-                alt_tab()
-
-                execution_time = round((time.time() - start_time), 2)
-                timer += execution_time
-
-            # Aos 15 minutos irá sair e entrar na partida para desbugar os herois.
-            elif 900 <= timer <= 960 and last_validation_bool == 0:
-                for k in range(tab):
-                    temporizador = 0
-
-                    last_validation()
-                    treasure_hunter()
-                    alt_tab()
-
-                last_validation_bool = 1
-
-                execution_time = round((time.time() - start_time), 2)
-                timer += execution_time
-
-            else:
-                time.sleep(5)
-                alt_tab()
-
-                execution_time = round((time.time() - start_time), 2)
-                timer += execution_time
-
-        print(date_time(), '| PAUSA DE DESCANSO - INICIADA')
-        start_time = time.time()
-        # 62 minutos de parada TOTAL no SCRIPT.
-        time.sleep(3720)
-        execution_time = round((time.time() - start_time), 2)
-        timer += execution_time
-        print(date_time(), '| PAUSA DE DESCANSO - COMPLETE')
-
-    else:
-        print('Algo deu errado. (Login)')
-        time.sleep(3)
-        exit()
-
+    print(date_time(), '| PAUSA DE DESCANSO - INICIADA')
+    start_time = time.time()
+    # 62 minutos de parada TOTAL no SCRIPT.
+    time.sleep(3720)
+    execution_time = round((time.time() - start_time), 2)
+    timer += execution_time
+    print(date_time(), '| PAUSA DE DESCANSO - COMPLETE')
 
     # Após completado 1h20m de pausa, o SCRIPT reinicia.
 
