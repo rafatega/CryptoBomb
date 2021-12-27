@@ -90,7 +90,7 @@ def assinar():
     meta_mask_error_handling = 0
 
     while temporizador < 20:
-        TRES_assinar = pyautogui.locateOnScreen('3_assinar.png', confidence=0.9)
+        TRES_assinar = pyautogui.locateOnScreen('3_assinar.png', confidence=0.8)
         if TRES_assinar is not None:
             pyautogui.moveTo(TRES_assinar)
             time.sleep(0.2)
@@ -130,7 +130,7 @@ def heroes():
     temporizador = 0
 
     # Clica em Heroes
-    while temporizador < 120:
+    while temporizador < 60:
         QUATRO_heroes = pyautogui.locateOnScreen('4_heroes.png', confidence=0.9)
 
         if QUATRO_heroes is not None:
@@ -145,7 +145,7 @@ def heroes():
         else:
             temporizador += 2
             time.sleep(2)
-    if temporizador == 120:
+    if temporizador == 60:
         print('Temporizador: ', temporizador)
         print(date_time(), '#4 - HEROES - FAIL')
         def_error = 1
@@ -242,7 +242,7 @@ def close_heroes():
 def treasure_hunter():
     temporizador = 0
 
-    while temporizador < 120:
+    while temporizador < 60:
         SEIS_treasure_hunter = pyautogui.locateOnScreen('6_treasure_hunter.png', confidence=0.9)
 
         if SEIS_treasure_hunter is not None:
@@ -257,7 +257,7 @@ def treasure_hunter():
         else:
             temporizador += 2
             time.sleep(2)
-    if temporizador == 120:
+    if temporizador == 60:
         print('Temporizador: ', temporizador)
         print(date_time(), '#6 - TREASURE HUNTER - FAIL')
         def_error = 1
@@ -294,7 +294,7 @@ def last_validation():
     temporizador = 0
 
     while temporizador < 20:
-        NOVE_validation = pyautogui.locateOnScreen('9_validation.png', confidence=0.9)
+        NOVE_validation = pyautogui.locateOnScreen('9_validation.png', confidence=0.99)
 
         if NOVE_validation is not None:
             pyautogui.moveTo(NOVE_validation)

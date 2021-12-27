@@ -2,29 +2,129 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d83328e-f2dc-4f8e-8297-259c69f909a7" name="Default Changelist" comment="Adicionado LAST_VALIDATION">
-      <change afterPath="$PROJECT_DIR$/13_overload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14_overload_close.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/10_backlog_work.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/11_backlog_work_complete.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/12_charapter_scroll_down.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/1_connect_wallet.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/2_meta_mask.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/3_assinar.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/4_heroes.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/5_close_heroes.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/6_treasure_hunter.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/7_new_map.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/8_error.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV1.1/9_validation.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV3/CryptoBombV3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV3b.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV5-TXT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CryptoBombV5b.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1_connect_wallet_antes.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3_assinar_teste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CryptoBombV6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/102.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/103.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/104.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/105.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/109.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/110.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/114.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/115.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/116.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/121.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/122.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/123.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/127.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/132.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/133.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/134.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/135.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/139.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/140.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/141.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/145.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/146.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/151.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/156.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/157.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/158.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/162.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/163.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/164.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/168.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/169.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/170.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/171.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/181.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/182.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/186.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/187.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/188.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/189.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/193.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/194.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/195.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/199.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/204.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/205.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/206.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/210.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/211.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/212.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/213.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/217.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/218.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/219.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/223.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/224.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/225.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/229.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/55.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/57.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/61.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/63.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/67.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/68.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/73.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/74.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/78.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/79.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/81.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/85.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/86.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/87.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/91.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/92.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/97.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frames/98.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste_frame_motion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoBombV3.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoBombV3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CryptoBombV4.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoBombV4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_connect_wallet.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/1_connect_wallet.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CryptoBombV5.py" beforeDir="false" afterPath="$PROJECT_DIR$/CryptoBombV5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testes.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,49 +162,7 @@
       <recent name="C:\Users\Tega\Documents\Projetos\CodigosIndependentes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CryptoBombV5">
-    <configuration name="CryptoBombV3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Tega\Envs\CodigosIndependentes\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CryptoBombV3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="CryptoBombV4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Tega\Envs\CodigosIndependentes\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CryptoBombV4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.CryptoBombV6">
     <configuration name="CryptoBombV5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,6 +205,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="CryptoBombV6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Tega\Envs\CodigosIndependentes\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CryptoBombV6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="teste_frame_motion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Tega\Envs\CodigosIndependentes\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teste_frame_motion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="testes (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CryptoBombV6" />
+        <item itemvalue="Python.testes (1)" />
+        <item itemvalue="Python.teste_frame_motion" />
         <item itemvalue="Python.CryptoBombV5" />
         <item itemvalue="Python.CryptoBombV5b" />
-        <item itemvalue="Python.testes (1)" />
-        <item itemvalue="Python.CryptoBombV3" />
-        <item itemvalue="Python.CryptoBombV4" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637279550123</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="CryptoBombV5 on the line">
+      <created>1637722968724</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637722968730</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +387,7 @@
     <MESSAGE value="Adicionado LAST_VALIDATION" />
     <MESSAGE value="WORK dinâmico arrumado" />
     <MESSAGE value="Atualizações" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizações" />
+    <MESSAGE value="CryptoBombV5 on the line" />
+    <option name="LAST_COMMIT_MESSAGE" value="CryptoBombV5 on the line" />
   </component>
 </project>
